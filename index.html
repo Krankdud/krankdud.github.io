@@ -1,6 +1,215 @@
----
-# You don't need to edit this file, it's empty on purpose.
-# Edit whiteglass' home layout instead if you want to make some changes.
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Charlie Schuy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Charlie Schuy</h1>
+        <nav>
+          <a href="#about">About</a>
+          /
+          <a href="#programming">Programming</a>
+          /
+          <a href="#speedrun">Speedrunning</a>
+          /
+          <a href="#other">Other projects</a>
+        <nav>
+      </div>
+    </header>
+    <main>
+      <article id="about">
+        <h2>About</h2>
+		<section class="section-flex">
+		  <figure class="about-figure">
+            <img src="images/charlie.png" alt="Charlie Schuy at AGDQ 2019" />
+		  </figure>
+          <div class="section-content">
+            <p>
+              Hi, I'm Charlie Schuy. I am a programmer based near Seattle, WA that graduated from Western Washington
+              University with a Bachelor's in Computer Science. I'm comfortable working on backend services, and have been
+              branching out and expanding my knowledge by learning mobile development on iOS and frontend development.
+            </p>
+            <p>
+              Outside of programming, I've been picking up drawing recently and hope to have some works to show by the end of
+              2019. I'm also involved in the speedrunning community, and helped raise money at Awesome Games Done Quick 2019
+              for the Prevent Cancer Foundation.
+            </p>
+            <div class="project-links">
+              <i class="fab fa-github"></i> <a href="https://github.com/Krankdud">GitHub</a>
+              <br />
+              <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/charlie-schuy-81807b180">LinkedIn</a>
+              <br />
+              <i class="fab fa-twitter"></i> <a href="https://www.twitter.com/Krankdud">Twitter</a>
+              <br />
+              <i class="fab fa-twitch"></i> <a href="https://www.twitch.tv/Krankdud">Twitch</a>
+            </div>
+         </div>
+		</section>
+      </article>
+      <article id="programming">
+        <h2>Programming</h2>
+        <section class="section-flex">
+          <figure>
+            <img src="images/ferrytime.png" alt="WA FerryTime" />
+          </figure>
+          <div class="section-content">
+            <h3>WA FerryTime</h3>
+            <p>
+              An iOS application for checking the schedule of the Washington State Ferry system. The app was built using the
+              <a href="https://github.com/ReactiveX/RxSwift">RxSwift</a> framework and the
+              <a href="http://www.wsdot.com/traffic/api/">WSDOT REST APIs</a>.
+            </p>
+            <div class="project-links">
+              <i class="fab fa-app-store"></i> <a href="https://itunes.apple.com/US/app/id1414027267">App Store</a>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <section class="section-flex">
+          <figure>
+            <img src="images/smospeedtech.png" alt="Odyssey SpeedTech" />
+          </figure>
+          <div class="section-content">
+            <h3>Odyssey SpeedTech</h3>
+            <p>
+              A website created to archive videos of tricks and glitches in the game Super Mario Odyssey. Clips can be added
+              and found through tags, or via search. The website was built in <a href="https://www.python.org/">Python 3</a>
+              using the <a href="http://flask.pocoo.org/">Flask</a> framework. The videos are embedded
+              <a href="https://youtube.com/">YouTube</a>, <a href="https://twitter.com">Twitter</a>, or
+              <a href="https://twitch.tv">Twitch</a> videos that are fetched via oEmbed.
+              <a href="https://getbootstrap.com/">Bootstrap</a> is used for the UI.
+            </p>
+            <div class="project-links">
+              <i class="fas fa-external-link-alt"></i> <a href="https://smospeedtech.com">Website</a>
+              <br />
+              <i class="fab fa-github"></i> <a href="https://github.com/Krankdud/speedtech">GitHub</a>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <section class="section-flex">
+          <figure>
+            <img src="images/nanosplit.png" alt="NanoSplit" />
+          </figure>
+          <div class="section-content">
+            <h3>NanoSplit</h3>
+            <p>
+              A web-based timer for speedrunners that is designed for mobile devices. NanoSplit allows users to import data
+              from the popular <a href="http://livesplit.org/">LiveSplit</a> timer, and also export times in LiveSplit's
+              format. This was built using <a href="https://www.typescriptlang.org/">TypeScript</a> and
+              <a href="https://reactjs.org/">React</a>.
+            </p>
+            <div class="project-links">
+              <i class="fas fa-external-link-alt"></i> <a href="https://krankdud.github.io/NanoSplit">Website</a>
+              <br />
+              <i class="fab fa-github"></i> <a href="https://github.com/Krankdud/NanoSplit">GitHub</a>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <section class="section-flex">
+          <figure>
+            <img src="images/talkatoo.png" alt="Talkatoo!" />
+          </figure>
+          <div class="section-content">
+            <h3>Talkatoo!</h3>
+            <p>
+              A silly project inspired by watching <a href="http://twitter.com/SpikeVegeta">@SpikeVegeta</a> playing through
+              Super Mario Odyssey with the restriction of only obtaining the Moons that the bird, Talkatoo, tells you to
+              grab. This website generates a list of Moons to obtain as you are playing through Super Mario Odyssey. It is
+              built using the <a href="https://vuejs.org/">Vue.js</a> framework and
+              <a href="https://getbootstrap.com/">Bootstrap</a> for the UI.
+            </p>
+            <div class="project-links">
+              <i class="fas fa-external-link-alt"></i> <a href="https://krankdud.github.io/talkatoo">Website</a>
+              <br />
+              <i class="fab fa-github"></i> <a href="https://github.com/Krankdud/talkatoo">GitHub</a>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <section class="section-flex">
+          <figure>
+            <img src="images/z2prac.png" alt="Mega Man Zero 2 Practice Hack" />
+          </figure>
+          <div class="section-content">
+            <h3>Mega Man Zero 2 Practice Hack</h3>
+            <p>
+              Contributed some ARM assembly code to <a href="https://twitter.com/Ajarmar_">@Ajarmar_</a>'s Mega Man Zero 2
+              practice hack. I added code to set the player's equipment to the appropriate equipment that you would have in
+              a hard mode speedrun, and refactored how ROM regions are defined to make it easier to modify. It was a fun
+              project and a way to learn about the inner workings of the Gameboy Advance.
+            </p>
+            <div class="project-links">
+              <i class="fab fa-github"></i> <a href="https://github.com/Ajarmar/zeroprac">GitHub</a>
+            </div>
+          </div>
+        </section>
+      </article>
+      <article id="speedrun">
+        <h2>Speedrunning</h2>
+        <section class="section-flex">
+          <div class="section-content">
+            <h3>Awesome Games Done Quick 2019</h3>
+            <p>
+              I participated in the <a href="https://gamesdonequick.com/">Games Done Quick</a> speedrunning marathon in
+              January 2019 to help raise over 2.4 dollars million for the
+              <a href="https://preventcancer.org/">Prevent Cancer Foundation</a>!
+              I had two runs in the marathon, a
+              <a href="https://www.youtube.com/watch?v=tRO07TywnLY">Mega Man Zero 2 Hard Mode</a> speedrun and a
+              <a href="https://www.youtube.com/watch?v=3z0eKN3oRl8">N++ Coop</a> speedrun with my good friend
+              <a href="https://www.twitter.com/Thunder1eg">AND4H</a>. Both runs went extremely well, and I recommend
+              watching both of them! The Mega Man Zero 2 run was later featured on GDQ's podcast,
+              <a href="https://www.youtube.com/watch?v=JwBxNou1_MQ">The Sprint</a>, where the run was broken down by
+              <a href="https://twitter.com/Mithical9">Mithical9</a>, who provided commentary in the live run.
+            </p>
+          </div>
+        </section>
+        <section class="section-flex">
+          <div class="section-content">
+            <h3>JRTA 4</h3>
+            <p>
+              In November 2017, I participated in the <a href="https://twitter.com/jrtamarathon">JRTA 4</a> marathon to help
+              raise money to bring four Japanese speedrunners to Awesome Games Done Quick 2018. During the event, I had two
+              runs: <a href="https://www.youtube.com/watch?v=W0DaA48p1Q8">Dustforce</a> and
+              <a href="https://www.youtube.com/watch?v=9FYn76kAGgQ">Gunstar Heroes Coop</a> (with
+              <a href="https://www.twitter.com/Thunder1eg">AND4H</a>). We successfully raised the money required to bring the
+              four to AGDQ 2018, and the excess money was donated to
+              <a href="https://www.doctorswithoutborders.org/">Doctors Without Borders</a>.
+            </p>
+          </div>
+        </section>
+      </article>
+      <article id="other">
+        <h2>Other projects</h2>
+        <section class="section-flex">
+          <figure>
+            <img src="images/nuclearzone.png" alt="Nuclear Zone" />
+          </figure>
+          <div class="section-content">
+            <h3>Nuclear Zone</h3>
+            <p>
+              A custom level pack created for the game <a href="http://dustforce.com/">Dustforce</a>. I created 13 levels
+              and a nexus that connects each of the levels together over several months. I wanted to explore a
+              post-apocalyptic style that I had created in a
+              <a href="http://atlas.dustforce.com/3316/acid-wastes">previous level</a> that I made. There's some stuff I
+              would like to change, but overall it turned out pretty well and the project was well received by the community.
+              The recommended way to play it nowadays is through the Community Nexuses in
+              <a href="http://dustmod.com/">Dustmod</a>, and it even has a revamped nexus thanks to
+              <a href="https://twitter.com/gdnght_grl">@gdnght_grl</a>!
+            </p>
+            <div class="project-links">
+              <i class="fas fa-external-link-alt"></i> <a href="http://atlas.dustforce.com/4380/nuclear-zone">Dustforce Atlas</a>
+            </div>
+          </div>
+        </section>
+      </article>
+    <main>
+  </body>
+</html>
